@@ -8,7 +8,7 @@ dependencies = [
   "fastapi==0.129.0",
   "python-multipart==0.0.22",
   "ultralytics==8.4.14",
-  "uvicorn==0.40.0",
+  "uvicorn==0.41.0",
 ]
 
 [project.optional-dependencies]
