@@ -154,14 +154,17 @@ class PersonDetector:
             # use numpy frombuffer for efficiency
             nparr = np.frombuffer(image_bytes, np.uint8)
             image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)  # pylint: disable=no-member
-
-            # convert BGR to RGB
-            return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # pylint: disable=no-member
-
         except Exception as e:
             logger.exception("error decoding image bytes")
             msg = "Failed to decode image data"
             raise ValueError(msg) from e
+
+        if image is None:
+            msg = "Failed to decode image data"
+            raise ValueError(msg)
+
+        # convert BGR to RGB
+        return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # pylint: disable=no-member
 
     def _process_results(
         self,
