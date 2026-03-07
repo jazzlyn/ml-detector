@@ -19,3 +19,9 @@ tasks:
     cmds:
       - task: pre-commit:init
       - task: pre-commit:run
+
+  sync:
+    desc: sync codebase -- cpu | cuda | xpu
+    dir: "{{.PROJECT_DIR}}"
+    cmds:
+      - uv sync --dev --frozen --extra {{.CLI_ARGS}}
