@@ -25,7 +25,7 @@ xpu = [
 
 [tool.uv]
 environments = [
-  "sys_platform == 'linux'",
+  "sys_platform == 'linux' and platform_machine == 'x86_64'",
 ]
 
 conflicts = [
