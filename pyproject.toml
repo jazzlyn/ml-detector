@@ -64,7 +64,7 @@ explicit = true
 [dependency-groups]
 dev = [
   "basedpyright==1.38.3",
-  "ruff==0.15.6",
+  "ruff==0.15.7",
 ]
 
 [tool.basedpyright]
