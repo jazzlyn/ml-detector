@@ -58,12 +58,6 @@ A Python application that filters images to keep only those containing the objec
 - nvidia drivers (check with nvidia-smi)
 - nvidia-container-toolkit
 
-#### For XPU support (arch)
-
-- intel-compute-runtime (aur/legacy or extra for latest)
-- level-zero-headers
-- level-zero-loader
-
 ### Initialization
 
 #### Initialize pre-commit hooks
@@ -84,12 +78,6 @@ uv sync --dev
 
 ```shell
 uv sync --extra cpu
-```
-
-**For Intel XPU inference**:
-
-```shell
-uv sync --extra xpu
 ```
 
 #### Activate virtual environment

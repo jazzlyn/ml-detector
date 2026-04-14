@@ -21,7 +21,7 @@ tasks:
       - task: pre-commit:run
 
   sync:
-    desc: sync codebase -- cpu | cuda | xpu
+    desc: sync codebase -- cpu | cuda
     dir: "{{.PROJECT_DIR}}"
     cmds:
       - uv sync --dev --frozen --extra {{.CLI_ARGS}}
