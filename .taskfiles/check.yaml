@@ -4,7 +4,7 @@ version: "3"
 
 tasks:
   device-local:
-    desc: check if device is available for torch -- cuda | xpu
+    desc: check if device is available for torch -- cuda
     silent: true
     cmds:
       - |
@@ -17,7 +17,7 @@ tasks:
         "
 
   device-docker:
-    desc: check if device is available for torch -- cuda | xpu
+    desc: check if device is available for torch -- cuda
     silent: true
     cmds:
       - |

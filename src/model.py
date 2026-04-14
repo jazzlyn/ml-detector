@@ -40,8 +40,6 @@ class DeviceType(Enum):
 
     CPU = "cpu"
     CUDA = "cuda"
-    MPS = "mps"
-    XPU = "xpu"
 
 
 class PersonDetector:
