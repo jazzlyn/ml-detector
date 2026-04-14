@@ -13,12 +13,12 @@ dependencies = [
 
 [project.optional-dependencies]
 cpu = [
-  "torch==2.9.1+cpu",
-  "torchvision==0.24.1+cpu",
+  "torch==2.11.0+cpu",
+  "torchvision==0.26.0+cpu",
 ]
 cuda = [
-  "torch==2.9.1+cu128",
-  "torchvision==0.24.1+cu128",
+  "torch==2.11.0+cu128",
+  "torchvision==0.26.0+cu128",
 ]
 [tool.uv]
 environments = [
