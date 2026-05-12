@@ -48,6 +48,8 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
       - id: name-tests-test
+        args:
+          - --pytest-test-first
       # - id: no-commit-to-branch
       - id: pretty-format-json
       - id: trailing-whitespace

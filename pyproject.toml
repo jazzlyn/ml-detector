@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
   "fastapi==0.136.1",
+  "opencv-python-headless>=4.13.0.92",
   "python-multipart==0.0.28",
   "ultralytics==8.4.48",
   "uvicorn==0.46.0",
@@ -56,6 +57,9 @@ explicit = true
 dev = [
   "basedpyright==1.39.0",
   "ruff==0.15.12",
+  "pytest",
+  "pytest-asyncio",
+  "httpx",
 ]
 
 [tool.basedpyright]
@@ -74,4 +78,9 @@ ignore = [
   "TD",   # flake8-todo
   "D203", # 1 blank line required before class docstring
   "D212", # Multi-line docstring summary should start at the first line
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
 ]
