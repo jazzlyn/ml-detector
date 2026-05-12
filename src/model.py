@@ -15,7 +15,7 @@ import torch
 from PIL import Image
 from ultralytics import YOLO  # type: ignore[import-untyped]
 
-from config import InferenceConfig, ModelConfig
+from src.config import InferenceConfig, ModelConfig
 
 # Configure logging
 logging.basicConfig(
