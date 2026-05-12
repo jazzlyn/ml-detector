@@ -20,6 +20,8 @@
 !README.md
 !Taskfile.yaml
 !uv.lock
+!tests/
+!tests/**
 
 
 # Ignore unnecessary files inside allowed directories
