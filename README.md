@@ -20,6 +20,7 @@ A Python application that filters images to keep only those containing the objec
 
 <details>
   <summary style="font-size:1.2em;">Table of Contents</summary>
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -36,6 +37,7 @@ A Python application that filters images to keep only those containing the objec
   - [API Endpoints](#api-endpoints)
   - [Response Format](#response-format)
   - [Testing the API](#testing-the-api)
+- [Testing](#testing)
 - [Known Issues](#known-issues)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -245,6 +247,14 @@ curl http://localhost:8000/livez
 
 ```shell
 curl http://localhost:8000/readyz
+```
+
+## Testing
+
+To run the unit test suite locally using `pytest`:
+
+```shell
+uv run pytest -v
 ```
 
 ## Known Issues
