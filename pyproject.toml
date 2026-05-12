@@ -56,6 +56,9 @@ explicit = true
 dev = [
   "basedpyright==1.39.0",
   "ruff==0.15.12",
+  "pytest",
+  "pytest-asyncio",
+  "httpx",
 ]
 
 [tool.basedpyright]
