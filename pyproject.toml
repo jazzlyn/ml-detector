@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
   "fastapi==0.136.3",
-  "opencv-python-headless>=4.13.0.92",
+  "opencv-python-headless==4.13.0.92",
   "python-multipart==0.0.29",
   "ultralytics==8.4.56",
   "uvicorn==0.48.0",
