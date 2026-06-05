@@ -56,7 +56,7 @@ explicit = true
 [dependency-groups]
 dev = [
   "basedpyright==1.39.6",
-  "ruff==0.15.15",
+  "ruff==0.15.16",
   "pytest",
   "pytest-asyncio",
   "httpx",
