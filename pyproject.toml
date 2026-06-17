@@ -8,7 +8,7 @@ dependencies = [
   "fastapi==0.137.1",
   "opencv-python-headless==4.13.0.92",
   "python-multipart==0.0.32",
-  "ultralytics==8.4.68",
+  "ultralytics==8.4.70",
   "uvicorn==0.49.0",
 ]
 
