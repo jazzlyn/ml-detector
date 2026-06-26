@@ -443,7 +443,7 @@ dev = [
     { name = "httpx" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
-    { name = "ruff", specifier = "==0.15.19" },
+    { name = "ruff", specifier = "==0.15.20" },
 ]
 
 [[package]]
@@ -977,12 +977,12 @@ wheels = [
 
 [[package]]
 name = "ruff"
-version = "0.15.19"
+version = "0.15.20"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d5/e6/15800dfde183a1a106594016c912b4c12d050a301989d1aca6cb63759fe8/ruff-0.15.19.tar.gz", hash = "sha256:edc27f7172a93b32b102687009d6a588508815072141543ae603a8b9b0823063", size = 4772071, upload-time = "2026-06-24T01:10:46.942Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/43/dc/35b341fc554ba02f217fc10da57d1a75168cfbcf75b0ef2202176d4c4f2d/ruff-0.15.20.tar.gz", hash = "sha256:1416eb04349192646b54de98f146c4f59afe37d0decfc02c3cbbf396f3a28566", size = 4755489, upload-time = "2026-06-25T17:20:37.578Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/89/3d/0b1f30f84bee9ae6ae8d349c2ba8b6f4b040966744efdd3acc804ae7c024/ruff-0.15.19-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6a498f82e0f4d8904c4e0aea5139cdfac1f39d19a3c51d491292f63a36e83b2e", size = 11616911, upload-time = "2026-06-24T01:10:44.809Z" },
-    { url = "https://files.pythonhosted.org/packages/81/e0/4a888cbe4d5523b3f77a2b1fa043f46cfeba1b32eac35dcfadee0578fa8a/ruff-0.15.19-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:08143f0685ae278b30727ea72e90c61e5bd9c31b91aac4f5bb989538f73d24b8", size = 11696533, upload-time = "2026-06-24T01:10:53.046Z" },
+    { url = "https://files.pythonhosted.org/packages/86/b1/a976a136d40ade83ce743578399865f57001003a409acadc0ecbb3051082/ruff-0.15.20-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:309809086c2acb67624950a3c8133e80f32d0d3e27106c0cd60ff26657c9f24b", size = 11520767, upload-time = "2026-06-25T17:20:09.191Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/a4/0caa331d954ae2723d729d351c989cb4ca8b6077d5c6c2cb6de75e98c041/ruff-0.15.20-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:01cc00dd58f0df339d0e902219dd53990ea99996a0344e5d9cc8d45d5307e460", size = 11618698, upload-time = "2026-06-25T17:20:25.259Z" },
 ]
 
 [[package]]
