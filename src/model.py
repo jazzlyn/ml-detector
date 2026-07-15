@@ -166,7 +166,7 @@ class PersonDetector:
 
     def _process_results(
         self,
-        results: list[Any],
+        results: Any,
         filename: str,
     ) -> dict[str, Any]:
         """Process YOLO results and extract configured class detections."""
