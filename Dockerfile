@@ -24,7 +24,8 @@ RUN basedpyright .
 RUN ruff check --no-fix .
 RUN ruff format --check .
 
-# run tests (when available)
+# run tests
+RUN uv run pytest -v
 
 FROM base AS build
 
