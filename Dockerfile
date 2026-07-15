@@ -3,6 +3,11 @@ COPY --from=ghcr.io/astral-sh/uv:0.11.28@sha256:0f36cb9361a3346885ca3677e3767016
 
 WORKDIR /app
 
+RUN apt-get update && apt-get install --no-install-recommends -y \
+      libgl1 \
+      libglib2.0-0 && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
 COPY pyproject.toml uv.lock ./
 
 RUN useradd -m user && \
@@ -18,6 +23,7 @@ ENV UV_NO_CACHE=1
 RUN uv sync --dev --frozen --extra cpu
 
 COPY src/ ./src/
+COPY tests/ ./tests/
 
 # run linting and code quality checks
 RUN basedpyright .
@@ -25,7 +31,7 @@ RUN ruff check --no-fix .
 RUN ruff format --check .
 
 # run tests
-RUN uv run pytest -v
+RUN pytest -v
 
 FROM base AS build
 
