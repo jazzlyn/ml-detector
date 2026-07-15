@@ -45,7 +45,17 @@ A Python application that filters images to keep only those containing the objec
 
 ## Code-Style
 
-<!-- TBD -->
+This project uses ruff (all rules) and basedpyright (strict mode). Run the full suite:
+
+```shell
+task lint
+```
+
+For faster iteration on Python-only checks:
+
+```shell
+uv run ruff check . && uv run basedpyright .
+```
 
 ## Getting Started
 
@@ -62,24 +72,22 @@ A Python application that filters images to keep only those containing the objec
 
 ### Initialization
 
+#### Install dependencies
+
+```shell
+task sync -- cpu
+```
+
+For CUDA GPU acceleration:
+
+```shell
+task sync -- cuda
+```
+
 #### Initialize pre-commit hooks
 
 ```shell
 task pre-commit:init
-```
-
-#### Install dependencies
-
-**Development Dependencies**:
-
-```shell
-uv sync --dev
-```
-
-**For CPU inference**:
-
-```shell
-uv sync --extra cpu
 ```
 
 #### Activate virtual environment

@@ -1,4 +1,5 @@
 # tests/test_api.py
+# pyright: reportUnknownMemberType=false, reportUnknownVariableType=false
 """API endpoint tests."""
 
 from collections.abc import Generator
