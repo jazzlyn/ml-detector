@@ -5,6 +5,7 @@ This module handles the loading and configuration of the YOLO model.
 """
 
 import logging
+from collections.abc import Iterable
 from enum import Enum
 from pathlib import Path
 from typing import Any, ClassVar
@@ -166,7 +167,7 @@ class PersonDetector:
 
     def _process_results(
         self,
-        results: list[Any],
+        results: Iterable[Any],
         filename: str,
     ) -> dict[str, Any]:
         """Process YOLO results and extract configured class detections."""
