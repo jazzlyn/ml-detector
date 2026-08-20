@@ -11,7 +11,7 @@ on:
 
 jobs:
   docker-build:
-    uses: techtales-io/github-workflows/.github/workflows/docker-build.yaml@2e6bcf9acd97ef3bc52ee0e4919656add4dc45ef # v0.5.7
+    uses: techtales-io/github-workflows/.github/workflows/docker-build.yaml@ecc2ec9aad03311eae6f69ac571430fcdc773211 # v0.5.8
     permissions:
       contents: read
       packages: read
