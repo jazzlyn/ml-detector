@@ -417,8 +417,8 @@ dependencies = [
 
 [package.optional-dependencies]
 cpu = [
-    { name = "torch", version = "2.13.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" } },
-    { name = "torchvision", version = "0.28.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" } },
+    { name = "torch", version = "2.14.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" } },
+    { name = "torchvision", version = "0.29.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" } },
 ]
 cuda = [
     { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" } },
@@ -439,9 +439,9 @@ requires-dist = [
     { name = "fastapi", specifier = "==0.141.1" },
     { name = "opencv-python-headless", specifier = "==5.0.0.93" },
     { name = "python-multipart", specifier = "==0.0.32" },
-    { name = "torch", marker = "extra == 'cpu'", specifier = "==2.13.0+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
+    { name = "torch", marker = "extra == 'cpu'", specifier = "==2.14.0+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torch", marker = "extra == 'cuda'", specifier = "==2.11.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
-    { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.28.0+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
+    { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.29.0+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.26.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
     { name = "ultralytics", specifier = "==8.4.138" },
     { name = "uvicorn", specifier = "==0.52.4" },
@@ -575,13 +575,13 @@ wheels = [
 
 [[package]]
 name = "nvidia-cudnn-cu13"
-version = "9.20.0.48"
+version = "9.24.0.43"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "nvidia-cublas", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6e/5e/edb9c0ae051602c3ccaffe424256463636d639e27d7f302dde9975ef9e7a/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:0c45dd8eeb50b603f07995b1b300c62ffe6a1980482b82b3bcf94a4ca9d49304", size = 366173588, upload-time = "2026-03-09T19:29:34.474Z" },
+    { url = "https://files.pythonhosted.org/packages/5c/ba/791cffd048fe5b044e620df55267e3e95c0e6e07d50b41e377c03dfc910f/nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:71f181cd810e90f9b6023b01186fe82d13d65f0ec098581ee201d39fad769e4b", size = 553099438, upload-time = "2026-07-02T16:27:42.58Z" },
 ]
 
 [[package]]
@@ -721,10 +721,10 @@ wheels = [
 
 [[package]]
 name = "nvidia-nccl-cu13"
-version = "2.29.7"
+version = "2.30.7"
 source = { registry = "https://pypi.org/simple" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/67/f4/58e4e91b6919367c7aafb8e36fce9aad1a3047e536bf7e2fd560927d3a4c/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl", hash = "sha256:edd81538446786ec3b73972543e53bb43bcaf0bfc8ef76cb679fcc390ffe136d", size = 205976000, upload-time = "2026-03-03T05:36:24.472Z" },
+    { url = "https://files.pythonhosted.org/packages/3f/34/c500f90c7ae641b8e0f98965b36b8a7ac79cc8b296e8d251fe3eb592ee54/nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl", hash = "sha256:cefa7fdb9710efd0f39c5f1be1d61ff6fc9a996c451265bd7fbdcf9455ed4b50", size = 215965170, upload-time = "2026-06-09T03:23:39.73Z" },
 ]
 
 [[package]]
@@ -1064,7 +1064,7 @@ wheels = [
 
 [[package]]
 name = "torch"
-version = "2.13.0"
+version = "2.14.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
@@ -1082,16 +1082,16 @@ dependencies = [
     { name = "nvidia-nvshmem-cu13", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
     { name = "setuptools", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
     { name = "sympy", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
-    { name = "triton", version = "3.7.1", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
+    { name = "triton", version = "3.8.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
     { name = "typing-extensions", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/5a/7c50ba1b7b713d71d34669c6d13dab0a11531a3eceb0307a5162dbfec0f7/torch-2.13.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:a3a9a21312872af8a26950b2c15680335a386a1f56ed03e780653d78b9607e9e", size = 526602329, upload-time = "2026-07-08T16:03:12.649Z" },
+    { url = "https://files.pythonhosted.org/packages/21/f1/39bd13b21f57d1982b7f3ddf663f01c7266e2957714880744eba9e8c8d11/torch-2.14.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:84bf384779a10c02fc3c6bdbab71a9cb66b0dd93c652d1ed5d6dfc0cb37e5962", size = 554619993, upload-time = "2026-09-02T13:45:28.209Z" },
 ]
 
 [[package]]
 name = "torch"
-version = "2.13.0+cpu"
+version = "2.14.0+cpu"
 source = { registry = "https://download.pytorch.org/whl/cpu" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
@@ -1106,7 +1106,7 @@ dependencies = [
     { name = "typing-extensions", marker = "extra == 'extra-11-ml-detector-cpu'" },
 ]
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.13.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:3fbf9c9d1f3c10c2d59d04aca426dee9ccc6ceb32d255c61e93acc3b4f75fae6", upload-time = "2026-07-08T19:29:54Z" },
+    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:160e1bc46aeded3111d2801f8ae10dc9a1b946843a7e126b4dbf5e19c5706e95", upload-time = "2026-09-02T18:32:05Z" },
 ]
 
 [[package]]
@@ -1128,7 +1128,7 @@ wheels = [
 
 [[package]]
 name = "torchvision"
-version = "0.28.0"
+version = "0.29.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
@@ -1136,15 +1136,15 @@ resolution-markers = [
 dependencies = [
     { name = "numpy", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
     { name = "pillow", marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
-    { name = "torch", version = "2.13.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
+    { name = "torch", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/db/062cdb5a84380a60439775311fff34d89229760d2a50680393dc18699956/torchvision-0.28.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:ad7b3a439265cc3739a4ab5b4c998c0e38ea99c0ee7ca4dea35c5d0b099ec237", size = 7674669, upload-time = "2026-07-08T16:07:38.91Z" },
+    { url = "https://files.pythonhosted.org/packages/34/78/afa8f85e1f3cb276202ad3af9e36765feee1f0c5ec2942d8522b321e5afc/torchvision-0.29.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:942a3b3fb4e981e1abb7846679ee3882dfc733533a30b68df0dadf6c06f238a9", size = 7430683, upload-time = "2026-09-02T13:47:15.141Z" },
 ]
 
 [[package]]
 name = "torchvision"
-version = "0.28.0+cpu"
+version = "0.29.0+cpu"
 source = { registry = "https://download.pytorch.org/whl/cpu" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
@@ -1152,10 +1152,10 @@ resolution-markers = [
 dependencies = [
     { name = "numpy", marker = "extra == 'extra-11-ml-detector-cpu'" },
     { name = "pillow", marker = "extra == 'extra-11-ml-detector-cpu'" },
-    { name = "torch", version = "2.13.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
+    { name = "torch", version = "2.14.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
 ]
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/cpu/torchvision-0.28.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:c6373ec4c2f922e89f45ac91889404d312ba29a31f205b0ad9a725a3894ca246", upload-time = "2026-07-08T12:26:39Z" },
+    { url = "https://download-r2.pytorch.org/whl/cpu/torchvision-0.29.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:6ff3b816ec955f3ef9f32d1e698e1856549e2e03637c358ee067c6f5f17f74fa", upload-time = "2026-09-02T00:27:44Z" },
 ]
 
 [[package]]
@@ -1172,13 +1172,13 @@ wheels = [
 
 [[package]]
 name = "triton"
-version = "3.7.1"
+version = "3.8.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/42/2c3ac59253ae8892b6f307875263dd23dc875cdf732d3aea40d6d41fb7cb/triton-3.7.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:58c0e131da05134a2a4788ccbcc0c1105cf0f54c8e98f19e34cd465396dc15eb", size = 197729241, upload-time = "2026-06-17T19:53:27.801Z" },
+    { url = "https://files.pythonhosted.org/packages/b0/b6/3394d5548404c1cabd1dadadd28d0b3f9478db1dff8180da53bb3f0a1e19/triton-3.8.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1f0497218e26b7d79773ad9c2a3fa3b539ee69f587a13fac2e552b1d322a8015", size = 247975122, upload-time = "2026-08-28T15:56:04.112Z" },
 ]
 
 [[package]]
@@ -1218,11 +1218,11 @@ dependencies = [
     { name = "pyyaml" },
     { name = "requests" },
     { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-11-ml-detector-cuda'" },
-    { name = "torch", version = "2.13.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
-    { name = "torch", version = "2.13.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
+    { name = "torch", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
+    { name = "torch", version = "2.14.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
     { name = "torchvision", version = "0.26.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-11-ml-detector-cuda'" },
-    { name = "torchvision", version = "0.28.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
-    { name = "torchvision", version = "0.28.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
+    { name = "torchvision", version = "0.29.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
+    { name = "torchvision", version = "0.29.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
     { name = "ultralytics-platform" },
     { name = "ultralytics-thop" },
 ]
@@ -1250,8 +1250,8 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
     { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-11-ml-detector-cuda'" },
-    { name = "torch", version = "2.13.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
-    { name = "torch", version = "2.13.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
+    { name = "torch", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
+    { name = "torch", version = "2.14.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/45/20/d6b6aaa8ecf7dbdeaf0c05f73bdcd04cf8ce468d936bc48dbcd368e75baf/ultralytics_thop-2.1.6.tar.gz", hash = "sha256:0ec2df8ebd3db35795e1f80cdc8bce6734446dbe989bca1b0c89396353f0f08c", size = 36364, upload-time = "2026-07-30T22:31:28.143Z" }
 wheels = [
