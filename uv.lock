@@ -449,7 +449,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'cuda'", specifier = "==2.11.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
     { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.29.0+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.26.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
-    { name = "ultralytics", specifier = "==8.4.163" },
+    { name = "ultralytics", specifier = "==8.4.164" },
     { name = "uvicorn", specifier = "==0.54.0" },
 ]
 provides-extras = ["cpu", "cuda"]
@@ -1210,7 +1210,7 @@ wheels = [
 
 [[package]]
 name = "ultralytics"
-version = "8.4.163"
+version = "8.4.164"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cloudpickle" },
@@ -1233,9 +1233,9 @@ dependencies = [
     { name = "ultralytics-platform" },
     { name = "ultralytics-thop" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f0/6c/f6e9e7e2bae9ee0ba61e51ea27b2999f17d2652c73b21714c234703f5c82/ultralytics-8.4.163.tar.gz", hash = "sha256:ec00601ad4ad1b0a61d1b763f5422f653e549645d87c768f2381f87092d24e7c", size = 1239532, upload-time = "2026-09-25T10:43:14.391Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/da/f70e99228b9d1bf6f5c6fca7db9331c8c4fa72f75e6dd9c213f48c628b72/ultralytics-8.4.164.tar.gz", hash = "sha256:3a1e687468e8bb8701aaead55ffb2735ff49cd65facee998bb07a346691521c3", size = 1257536, upload-time = "2026-09-27T18:00:38.849Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/48/eee35b9ed66e707918d1840b92bce3045c63764fd3908f4cde760a99eefa/ultralytics-8.4.163-py3-none-any.whl", hash = "sha256:65b911abbefe69eee088589fdb579e810844c57c4fd8669f28368380d302e2ad", size = 1455698, upload-time = "2026-09-25T10:43:09.391Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/13/84e03701b2d259431f0693ac3f319969674b866bae20e0af9a67584418f5/ultralytics-8.4.164-py3-none-any.whl", hash = "sha256:b85b524c322349d75819009e52e1bfd67bf902a30daf0a0e448bf8b9b60c52cd", size = 1475180, upload-time = "2026-09-27T18:00:34.238Z" },
 ]
 
 [[package]]
@@ -1252,7 +1252,7 @@ wheels = [
 
 [[package]]
 name = "ultralytics-thop"
-version = "2.1.6"
+version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
@@ -1260,9 +1260,9 @@ dependencies = [
     { name = "torch", version = "2.14.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda') or (extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda')" },
     { name = "torch", version = "2.14.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "extra == 'extra-11-ml-detector-cpu'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/45/20/d6b6aaa8ecf7dbdeaf0c05f73bdcd04cf8ce468d936bc48dbcd368e75baf/ultralytics_thop-2.1.6.tar.gz", hash = "sha256:0ec2df8ebd3db35795e1f80cdc8bce6734446dbe989bca1b0c89396353f0f08c", size = 36364, upload-time = "2026-07-30T22:31:28.143Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/d4/6c6f3a4c6ee61682333a89859aca51e8cef942b636f5e6f875e31558f191/ultralytics_thop-2.2.1.tar.gz", hash = "sha256:e689ba63d146aacb372fdde593c303da96030abea0a76198c8ac68a5a376eab8", size = 38877, upload-time = "2026-09-27T21:54:25.068Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/53/98/f1fa3d40d548c8a2a3eec33b7f856063bb6c7d51e16d5198b1f390b2c79d/ultralytics_thop-2.1.6-py3-none-any.whl", hash = "sha256:23f7b8ad124fa3432c1a7de9279102c4fdda699216032a7dff49f87ec3d1a3af", size = 30479, upload-time = "2026-07-30T22:31:26.874Z" },
+    { url = "https://files.pythonhosted.org/packages/7d/08/73eb3c48098ddb2c75c5ecad1476e7dc92df49d12527fcc824d07cfebe81/ultralytics_thop-2.2.1-py3-none-any.whl", hash = "sha256:fcf3a58db5fbbde800079ab09d4915e9cc3f86e0a78b6a4e7b525149b2d18569", size = 31996, upload-time = "2026-09-27T21:54:23.791Z" },
 ]
 
 [[package]]
