@@ -88,15 +88,6 @@ wheels = [
 ]
 
 [[package]]
-name = "cloudpickle"
-version = "3.1.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/27/fb/576f067976d320f5f0114a8d9fa1215425441bb35627b1993e5afd8111e5/cloudpickle-3.1.2.tar.gz", hash = "sha256:7fda9eb655c9c230dab534f1983763de5835249750e85fbcef43aaa30a9a2414", size = 22330, upload-time = "2025-11-03T09:25:26.604Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl", hash = "sha256:9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a", size = 22228, upload-time = "2025-11-03T09:25:25.534Z" },
-]
-
-[[package]]
 name = "contourpy"
 version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -450,7 +441,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'cuda'", specifier = "==2.11.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
     { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.29.1+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.26.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
-    { name = "ultralytics", specifier = "==8.4.171" },
+    { name = "ultralytics", specifier = "==8.4.172" },
     { name = "uvicorn", specifier = "==0.54.0" },
 ]
 provides-extras = ["cpu", "cuda"]
@@ -1223,11 +1214,9 @@ wheels = [
 
 [[package]]
 name = "ultralytics"
-version = "8.4.171"
+version = "8.4.172"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cloudpickle" },
-    { name = "filelock" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "nvidia-ml-py" },
@@ -1246,9 +1235,9 @@ dependencies = [
     { name = "ultralytics-platform" },
     { name = "ultralytics-thop" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9e/f2/e00224d3163c3ef0d16428ad569b7244d3a48d9689e4b5bba2ecd7a7994e/ultralytics-8.4.171.tar.gz", hash = "sha256:8583d9d890fb166628f89b9b00bcb2465bc0ce1a6b8c5576221ebca966affc94", size = 1264362, upload-time = "2026-10-01T10:33:34.353Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9b/f6/2bd8101084917043d4e25e4d439adc94b82e9cec33ae2af72d8c46fe2a22/ultralytics-8.4.172.tar.gz", hash = "sha256:98dcfa032578e93d7fccf0d462dc2c1979a05e50a7e212f94c7e5f7f4b699b05", size = 1265104, upload-time = "2026-10-03T11:54:23.298Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ca/04/7709444a42ee21de1934c7c79913dc5eaf48df013d2b31bff5f3490acffc/ultralytics-8.4.171-py3-none-any.whl", hash = "sha256:861c25c85821fa974ec158639c13d9beee91aad6b0fa4d05d7bd957d0a6e81d7", size = 1415683, upload-time = "2026-10-01T10:33:30.314Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/aa/22129f2ba8a0732a0ad7bec7e7f7d8a64d472e12965db1a91c8be5f6fc16/ultralytics-8.4.172-py3-none-any.whl", hash = "sha256:55e294950d30a0d7053fb0c553088abc7c6c5bfd13369ac46ea43954a7d90d38", size = 1416612, upload-time = "2026-10-03T11:54:18.219Z" },
 ]
 
 [[package]]
