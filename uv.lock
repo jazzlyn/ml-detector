@@ -440,7 +440,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'cuda'", specifier = "==2.11.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
     { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.29.1+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.26.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
-    { name = "ultralytics", specifier = "==8.4.184" },
+    { name = "ultralytics", specifier = "==8.4.189" },
     { name = "uvicorn", specifier = "==0.54.0" },
 ]
 provides-extras = ["cpu", "cuda"]
@@ -1213,7 +1213,7 @@ wheels = [
 
 [[package]]
 name = "ultralytics"
-version = "8.4.184"
+version = "8.4.189"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
@@ -1234,9 +1234,9 @@ dependencies = [
     { name = "ultralytics-platform" },
     { name = "ultralytics-thop" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/db/15/907181d03defbace7d2c710dc568c5a2b70875bf5d3c833a4bcdd7a179b2/ultralytics-8.4.184.tar.gz", hash = "sha256:e556832d07f70ba2f73aa8140dceb2a8fb3d5e9a0d9c70827f22a658d292d0ad", size = 1289038, upload-time = "2026-10-22T17:42:32.505Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/04/bf075e785597593b977c13e74f35373505965415eff2e8abb75b4c7e9f67/ultralytics-8.4.189.tar.gz", hash = "sha256:42ee386b218ef1e364f8fbe5e0a9d593d64893e4de4131bc0a17c02019f6449f", size = 1281167, upload-time = "2026-10-25T13:25:12.649Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9f/a6/9f12ea1984a10838e5771c530b3072fcff8e671ca2ebbbcb15d08fff2be4/ultralytics-8.4.184-py3-none-any.whl", hash = "sha256:d04c80f27d335fe27a057dcf00f91c843b11f99d21e7b3017616959a523bfc8a", size = 1429044, upload-time = "2026-10-22T17:42:28.108Z" },
+    { url = "https://files.pythonhosted.org/packages/9b/c3/d1b6e2a61e5fb47c34ab812c7f6e0978d36742585b37b9ded9447d9cf127/ultralytics-8.4.189-py3-none-any.whl", hash = "sha256:eb14b93d1eb4894dc60e25d31bb865db2336d4705d386764ebd2f5cd42cec8a5", size = 1430980, upload-time = "2026-10-25T13:25:07.037Z" },
 ]
 
 [[package]]
