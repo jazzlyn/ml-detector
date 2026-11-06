@@ -437,7 +437,7 @@ requires-dist = [
     { name = "torch", marker = "extra == 'cuda'", specifier = "==2.11.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
     { name = "torchvision", marker = "extra == 'cpu'", specifier = "==0.29.2+cpu", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "ml-detector", extra = "cpu" } },
     { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.26.0+cu128", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "ml-detector", extra = "cuda" } },
-    { name = "ultralytics", specifier = "==8.4.194" },
+    { name = "ultralytics", specifier = "==8.4.203" },
     { name = "uvicorn", specifier = "==0.54.0" },
 ]
 provides-extras = ["cpu", "cuda"]
@@ -967,16 +967,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pyyaml"
-version = "6.0.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz", hash = "sha256:d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f", size = 130960, upload-time = "2025-09-25T21:33:16.546Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/74/27/e5b8f34d02d9995b80abcef563ea1f8b56d20134d8f4e5e81733b1feceb2/pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0f29edc409a6392443abf94b9cf89ce99889a1dd5376d94316ae5145dfedd5d6", size = 801626, upload-time = "2025-09-25T21:32:28.878Z" },
-    { url = "https://files.pythonhosted.org/packages/3d/e0/7966e1a7bfc0a45bf0a7fb6b98ea03fc9b8d84fa7f2229e9659680b69ee3/pyyaml-6.0.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:eda16858a3cab07b80edaf74336ece1f986ba330fdb8ee0d6c0d68fe82bc96be", size = 794115, upload-time = "2025-09-25T21:32:31.353Z" },
-]
-
-[[package]]
 name = "requests"
 version = "2.34.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1213,7 +1203,7 @@ wheels = [
 
 [[package]]
 name = "ultralytics"
-version = "8.4.194"
+version = "8.4.203"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
@@ -1223,7 +1213,6 @@ dependencies = [
     { name = "pillow" },
     { name = "polars" },
     { name = "psutil" },
-    { name = "pyyaml" },
     { name = "requests" },
     { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-11-ml-detector-cuda'" },
     { name = "torch", version = "2.15.0", source = { registry = "https://pypi.org/simple" }, marker = "(extra != 'extra-11-ml-detector-cpu' and extra != 'extra-11-ml-detector-cuda') or (extra == 'extra-11-ml-detector-cpu' and extra == 'extra-11-ml-detector-cuda')" },
@@ -1234,9 +1223,9 @@ dependencies = [
     { name = "ultralytics-platform" },
     { name = "ultralytics-thop" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/87/51/3172a0436998464c15fee82976f2ebe1a76f44996c7c0ac56a66d02d46e0/ultralytics-8.4.194.tar.gz", hash = "sha256:67959456bf041c1c747fe066e612f93e940f76c4fc3e755c54b71b992203ff70", size = 1294118, upload-time = "2026-10-30T18:56:11.146Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/45/fa/36524e2f9241ecebd77c1bbe86b049ffa7f222702fc2ccc78f63683db4f5/ultralytics-8.4.203.tar.gz", hash = "sha256:bbae950e5815ce37eb301aac798a4431b871dd6aa5915e54824b78e7d63b52b1", size = 1299851, upload-time = "2026-11-05T19:13:30.408Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/e7/9f99405c4f7614a0fa205a75b6d16a6a03fe5a770a7c767609d1bb948c6c/ultralytics-8.4.194-py3-none-any.whl", hash = "sha256:bbfa9185046faeb7fbd88e1f2335be7f7d9058548155292bab8da3e324940fcf", size = 1434433, upload-time = "2026-10-30T18:56:06.446Z" },
+    { url = "https://files.pythonhosted.org/packages/9c/52/1758911812d530327ea245d23c5291587a39d8dc69a4514f086ce3377106/ultralytics-8.4.203-py3-none-any.whl", hash = "sha256:34151047663426936b2699fd1ae8c325c7ee2ebaa282fcd70ced4a4577183191", size = 1440020, upload-time = "2026-11-05T19:13:26.301Z" },
 ]
 
 [[package]]
