@@ -5,18 +5,21 @@ This module handles the loading and configuration of the YOLO model.
 """
 
 import logging
-from collections.abc import Iterable
 from enum import Enum
 from pathlib import Path
-from typing import Any, ClassVar
+from typing import TYPE_CHECKING, Any, ClassVar
 
 import cv2  # pylint: disable=import-error
 import numpy as np
 import torch
-from PIL import Image
 from ultralytics import YOLO  # type: ignore[import-untyped]
 
-from config import InferenceConfig, ModelConfig
+if TYPE_CHECKING:
+    from collections.abc import Iterable
+
+    from PIL import Image
+
+    from config import InferenceConfig, ModelConfig
 
 # Configure logging
 logging.basicConfig(
@@ -239,7 +242,7 @@ class PersonDetector:
             # re-raise validation errors with more context
             logger.exception("validation error during inference for %s", filename)
             raise
-        except (RuntimeError, OSError):
+        except RuntimeError, OSError:
             logger.exception("unexpected error during inference for %s", filename)
             # return safe fallback response
             return {

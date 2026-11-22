@@ -2,14 +2,16 @@
 # pyright: reportUnknownMemberType=false, reportUnknownVariableType=false
 """API endpoint tests."""
 
-from collections.abc import Generator
-from typing import Any
+from typing import TYPE_CHECKING, Any
 from unittest.mock import MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
 
 from src.inference import AppState, app
+
+if TYPE_CHECKING:
+    from collections.abc import Generator
 
 
 @pytest.fixture
