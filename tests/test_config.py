@@ -1,11 +1,14 @@
 # ruff: noqa: S101, PLR2004, S104
 """Tests for the configuration manager."""
 
-from pathlib import Path
+from typing import TYPE_CHECKING
 
 import pytest
 
 from src.config import ConfigurationManager
+
+if TYPE_CHECKING:
+    from pathlib import Path
 
 
 def test_config_loads_valid_yaml(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:

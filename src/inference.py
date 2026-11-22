@@ -5,16 +5,18 @@ Provides REST endpoints for processing images and detecting people.
 """
 
 import logging
-from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 from enum import Enum
-from typing import Annotated, Any
+from typing import TYPE_CHECKING, Annotated, Any
 
 import uvicorn
 from fastapi import FastAPI, File, HTTPException, Response, UploadFile
 
 from config import AppConfig, ConfigurationManager
 from model import PersonDetector
+
+if TYPE_CHECKING:
+    from collections.abc import AsyncGenerator
 
 # Configure logging
 logging.basicConfig(
