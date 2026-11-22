@@ -5,6 +5,7 @@ Provides REST endpoints for processing images and detecting people.
 """
 
 import logging
+import platform
 from contextlib import asynccontextmanager
 from enum import Enum
 from typing import TYPE_CHECKING, Annotated, Any
@@ -106,11 +107,10 @@ async def info() -> dict[str, str]:
     Provides basic service metadata for monitoring and debugging.
     """
     return {
-        # TODO: update with dynamic values
         "name": "Ring Camera Person Detector",
-        "version": "0.1.0",
+        "version": "0.5.3",
         "description": "API to detect if a person is in Ring camera images",
-        "python_version": "3.12.11",
+        "python_version": platform.python_version(),
     }
 
 
