@@ -9,7 +9,7 @@ dependencies = [
   "opencv-python-headless==5.1.0.95",
   "python-multipart==0.0.34",
   "pyyaml==6.0.4",
-  "ultralytics==8.4.218",
+  "ultralytics==8.4.220",
   "uvicorn==0.54.0",
 ]
 
